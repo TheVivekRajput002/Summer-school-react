@@ -11,6 +11,13 @@ import register_icon from '../assets/images/register_icon.png'
 
 
 const Home = () => {
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
         <>
 
@@ -57,8 +64,9 @@ const Home = () => {
 
             {/* <!-- ========bottom navbar========= --> */}
             <div className="nav-container">
+
                 <div className="home">
-                    <div><img className="svg" src={home_icon} alt="" /></div>
+                    <button onClick={() => scrollToSection('home')}><img className="svg" src={home_icon} alt="" /></button>
                     <div> <p className="svg-text">Home</p></div>
                 </div>
 
@@ -68,7 +76,7 @@ const Home = () => {
                 </div>
 
                 <div className="dashboard">
-                    <div><img className="svg" src={dashboard} alt="" /></div>
+                    <button onClick={() => scrollToSection('student_dashboard')}><img className="svg" src={dashboard} alt="" /></button>
                     <div> <p className="svg-text">Dashboard</p></div>
                 </div>
 

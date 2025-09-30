@@ -17,7 +17,7 @@ const About = () => {
                     <div class="text-center space-y-4">
                         <h1 class="text-[20px] text-gray-900 font-medium font-rosario tracking-[12%]" data-aos-duration="700">ABOUT THE PROGRAM
                         </h1>
-                        <p class="text-sm text-gray-700 font-inter leading-relaxed" data-aos-duration="700">
+                        <p class="text-sm mt-6 text-[#a2a2a2] font-inter leading-relaxed" data-aos-duration="700">
                             Learn from experts, work on real projects, and earn certification to showcase your skills. Our program
                             is designed to give you practical experience and validate your knowledge.
                         </p>
@@ -25,7 +25,7 @@ const About = () => {
 
                     {/* <!-- Cards Section --> */}
 
-                    <div class="space-y-10">
+                    <div class="space-y-6">
 
                         {/* <!-- Expert Mentorship (slide from left) --> */}
 

@@ -279,7 +279,7 @@ h1 {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   overflow: hidden;
-  margin-top: 10px;
+  padding: 10px;
 }
 
 .progress-fill {
@@ -421,7 +421,7 @@ h1 {
   line-height: 100%;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #9e9999, #000);
+  background: #d6d6d6;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -429,10 +429,11 @@ h1 {
 .role {
   /* fallback to local fonts */
   font-family: var(--font-geist-sans), system-ui, sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 11px;
   line-height: 120%;
-  color: #ccc;
+  color: #9a9a9a;
+  margin-top: 5px;
 }
 
 .points {
