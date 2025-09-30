@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import "./Student_dashboard.css"
+import {ClipboardCheck, TrendingUp, SquareCheckBig, CircleUserRound} from 'lucide-react'
 
 export default function StudentDashboard() {
   const [activeSection, setActiveSection] = useState(null)
@@ -81,33 +82,33 @@ export default function StudentDashboard() {
   const testimonials = [
     {
       name: "Karan Singh",
-      title: "Alumni 2020",
+      // title: "Alumni 2020",
       message: "The support from faculty and tools like this dashboard paved the way for my success.",
     },
     {
       name: "Vijay Pande",
-      title: "Prof. of Physics",
+      // title: "Prof. of Physics",
       message:
         "Whether it's the wisdom of our Principal, the dedication of our HODs, or the success stories of our alumni — each message reflects the legacy we build together.",
     },
     {
       name: "Sneha Kapoor",
-      title: "Alumni 2021",
+      // title: "Alumni 2021",
       message: "Our professors encouraged me to innovate and grow — proud to be part of this institution.",
     },
     {
       name: "Rahul Mehta",
-      title: "Alumni 2023",
+      // title: "Alumni 2023",
       message: "Ranking among the top, this dashboard helped me plan and excel throughout my studies.",
     },
     {
       name: "Anita Sharma",
-      title: "Prof. of Chemistry",
+      // title: "Prof. of Chemistry",
       message: "The collaborative environment here fosters innovation and critical thinking among students.",
     },
     {
       name: "Priya Desai",
-      title: "Alumni 2022",
+      // title: "Alumni 2022",
       message: "This dashboard was a game-changer, helping me track my progress and stay motivated.",
     },
   ]
@@ -236,7 +237,7 @@ export default function StudentDashboard() {
           onClick={() => showContent("quiz")}
           data-tooltip="Take a quiz to earn points"
         >
-          <img src="/images/quiz-icon.png" alt="Quiz Icon" width="24" height="24" />
+        <ClipboardCheck />
           TAKE QUIZ
         </button>
         <button
@@ -244,7 +245,7 @@ export default function StudentDashboard() {
           onClick={() => showContent("progress")}
           data-tooltip="View your progress stats"
         >
-          <img src="/images/progress-icon.png" alt="Progress Icon" width="24" height="24" />
+          <CircleUserRound />
           PROGRESS
         </button>
         <button
@@ -252,7 +253,7 @@ export default function StudentDashboard() {
           onClick={() => showContent("rankings")}
           data-tooltip="See the leaderboard rankings"
         >
-          <img src="/images/rankings-icon.png" alt="Rankings Icon" width="24" height="24" />
+          <TrendingUp />
           RANKINGS
         </button>
         <button
@@ -260,7 +261,7 @@ export default function StudentDashboard() {
           onClick={() => showContent("tasks")}
           data-tooltip="Check your tasks (none available)"
         >
-          <img src="/images/tasks-icon.png" alt="Tasks Icon" width="24" height="24" />
+          <SquareCheckBig />
           TASKS
         </button>
       </div>
@@ -363,7 +364,7 @@ export default function StudentDashboard() {
                   <div className="avatar"></div>
                   <div className="name-title">
                     <div className="name">{testimonials[testimonials.length - 1].name}</div>
-                    <div className="title">{testimonials[testimonials.length - 1].title}</div>
+                <div className="title">{testimonials[testimonials.length - 1].title}</div>
                   </div>
                 </div>
                 <p>{testimonials[testimonials.length - 1].message}</p>

@@ -553,7 +553,6 @@ h1 {
 
 .testimonial-header {
   display: flex;
-  align-items: center;
   gap: 12px;
   margin-bottom: 14px;
 }
@@ -583,7 +582,7 @@ h1 {
   -webkit-text-fill-color: unset;
 }
 
-.title {
+ .title {
   /* fallback to local fonts */
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   font-size: 0.8rem;
