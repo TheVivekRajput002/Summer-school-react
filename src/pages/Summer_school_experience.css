@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
- 
+
 
 .summer_school_experience_body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
-  background: radial-gradient(circle, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(34, 34, 34, 1) 0%, rgba(0, 0, 0, 1) 100%);
   color: white;
   overflow-x: hidden;
   position: relative;
@@ -47,7 +47,7 @@
 
 
 .summer_school_experience_body::after {
-  box-shadow: 
+  box-shadow:
     0 0 0 0 rgba(0, 0, 0, 0),
     200px 100px 0 0 rgba(255, 255, 255, 0.02),
     -300px 400px 0 0 rgba(255, 255, 255, 0.025),
@@ -69,18 +69,18 @@
   width: 100%;
   margin: 0 auto;
   padding: 2rem 1rem;
+  height: auto;
   position: relative;
   z-index: 1;
-
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 
- header {
+header {
   text-align: center;
   font-family: 'League Gothic', sans-serif;
   font-size: 6rem;
@@ -92,24 +92,24 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
- }
- 
+}
 
- .subheading {
+
+.subheading {
   text-align: center;
   font-size: 1rem;
   color: #ccc;
   margin-bottom: 2rem;
- }
- 
+}
 
- .feedback-wrapper {
+
+.feedback-wrapper {
   display: flex;
   justify-content: center;
- }
- 
+}
 
- .feedback-box {
+
+.feedback-box {
   border: 0.1px #919191 solid;
   border-radius: 16px;
   box-shadow: #888;
@@ -125,10 +125,10 @@
   height: 600px;
   box-sizing: border-box;
   gap: 1rem;
- }
- 
+}
 
- .card-box {
+
+.card-box {
   box-shadow: #888;
   padding: 1.5rem;
   width: 100%;
@@ -142,42 +142,42 @@
   height: 200px;
   box-sizing: border-box;
   gap: 1rem;
- }
- 
+}
 
 
- .rate {
+
+.rate {
   text-align: center;
   font-size: 8px;
- }
- 
+}
 
- .rate h2 {
+
+.rate h2 {
   font-size: 12px;
   letter-spacing: 0.1rem;
   margin: 0;
- }
- 
+}
 
- .rate p {
+
+.rate p {
   font-size: 9px;
   letter-spacing: 1px;
   color: #aaa;
   margin-top: 0.3rem;
- }
- 
+}
 
- .slider {
+
+.slider {
   position: relative;
   width: 100%;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
- }
- 
+}
 
- .card {
+
+.card {
   position: absolute;
   align-items: center;
   justify-content: center;
@@ -191,24 +191,48 @@
   opacity: 0;
   transform: translateY(20px);
   animation: slideCard 15s infinite;
- }
- 
-
- .card:nth-child(2) { animation-delay: 5s; }
- .card:nth-child(3) { animation-delay: 10s; }
- 
-
- @keyframes slideCard {
-  0%   { opacity: 0; transform: translateY(20px); }
-  5%   { opacity: 1; transform: translateY(0); }
-  30%  { opacity: 1; transform: translateY(0); }
-  35%  { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 0; transform: translateY(-20px); }
- }
- 
+}
 
 
- .add-btn {
+.card:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 10s;
+}
+
+
+@keyframes slideCard {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  35% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+
+.add-btn {
   height: 32px;
   padding: 0 1rem;
   border: 1px solid #919191;
@@ -220,89 +244,89 @@
   border-radius: 6px;
   margin-top: 0.5rem;
   align-self: center;
- }
- 
+}
 
 
- .name {
+
+.name {
   font-weight: bold;
   margin-top: 0.5rem;
   color: #5e3f41;
- }
- 
+}
 
- .time {
+
+.time {
   font-size: 0.8rem;
   color: #938b86;
   margin-top: 0.2rem;
- }
- 
+}
 
- .photo {
+
+.photo {
   border: 4px #000 solid;
   border-radius: 50px;
   height: 1px;
   width: 1px;
   scale: 0.05;
- }
- 
+}
 
 
- footer {
+
+footer {
   text-align: center;
-  margin-top: 7rem;
+  margin: 5rem 0 5rem;
   font-size: 0.85rem;
   color: #888;
- }
- 
+}
 
- footer nav {
+
+footer nav {
   margin-top: 1rem;
- }
- 
+}
 
- footer nav a {
+
+footer nav a {
   margin: 0 10px;
   text-decoration: none;
   color: #00bfff;
   font-weight: 500;
- }
- 
+}
 
 
- @media (max-width: 600px) {
+
+@media (max-width: 600px) {
   .feedback-box {
-  height: auto;
+    height: auto;
   }
- 
+
 
   .slider {
-  position: relative;
-  min-height: 65px;
+    position: relative;
+    min-height: 65px;
   }
- 
+
 
   .card {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
   }
- 
+
 
   .add-btn {
-  width: 55%;
-  margin-top: 1rem;
+    width: 55%;
+    margin-top: 1rem;
   }
- }
+}
 
- footer nav a {
+footer nav a {
   margin: 0 10px;
   text-decoration: none;
   color: #00bfff;
   font-weight: 500;
-  display: inline-block; 
+  display: inline-block;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 footer nav a:hover {
   transform: scale(1.1);
-  color: #66d9ff; 
+  color: #66d9ff;
 }

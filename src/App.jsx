@@ -21,11 +21,11 @@ function App() {
           <About />
         </div>
 
-        <div id="student_dashboard">
+        <div id="student_dashboard" className="">
           <Student_dashboard />
         </div>
 
-        <div id="summer_school_experience" >
+        <div id="summer_school_experience" className="" >
           < Summer_school_experience />
         </div>
       </div >
